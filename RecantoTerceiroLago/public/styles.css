@@ -1,0 +1,117 @@
+/* Estilos CSS aqui */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #009688;
+}
+
+/* Estilos para a seção de Página Inicial */
+#home {
+    text-align: center;
+    padding: 10px;
+}
+
+#home h2 {
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    animation: move 25s infinite linear;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+/* Botões de navegação */
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #009688;
+    transition: color 0.3s ease;
+}
+
+.carousel-button:hover {
+    color: #007a63;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
