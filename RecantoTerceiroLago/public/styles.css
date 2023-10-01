@@ -120,11 +120,13 @@ nav a:hover {
 }
 
 /* Estilos para a seção de Reserva */
+/* Estilo para a seção Reservar */
 .reservation {
     background-color: #009688; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
     color: #fff; /* Cor do texto */
-    padding: 100px 0; /* Espaçamento interno (topo/baixo) */
 }
+
 
 .reservation-heading {
     font-size: 36px; /* Tamanho da fonte do título */
@@ -152,3 +154,29 @@ nav a:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
 }
 
+/* Seção: Imagens */
+.gallery {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .gallery-heading {
+    margin-top: 0; /* Remove o espaçamento superior padrão do h2 */
+  }
+  
+  .gallery-images {
+    display: flex; /* Usa flexbox para centralizar as imagens horizontalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+  }
+  
+  .gallery-image {
+    margin: 10px; /* Espaçamento entre as imagens */
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    max-height: 250px;
+  }
