@@ -10,11 +10,11 @@ header {
     background-color: #009688;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -40,7 +40,7 @@ nav a:hover {
 /* Estilos para a seção de Página Inicial */
 #home {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 #home h2 {
@@ -57,8 +57,8 @@ nav a:hover {
     display: flex;
     overflow: hidden;
     justify-content: center;
-    width: 80%;
-    max-width: 500px;
+    width: 100%; /* Usar a largura total do contêiner pai */
+    max-width: 800px; /* Largura máxima do carrossel */
     margin: 0 auto;
     position: relative;
 }
@@ -71,7 +71,7 @@ nav a:hover {
 .carousel-item {
     width: 100%;
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 100%; /* Certificar-se de que as imagens não ultrapassem a largura do carrossel */
 }
 
 /* Botões de navegação */
@@ -86,16 +86,19 @@ nav a:hover {
 }
 
 .carousel-button {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.5); /* Cor de fundo transparente */
     border: none;
     cursor: pointer;
     font-size: 24px;
     color: #009688;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 10px 15px; /* Espaçamento interno para melhorar a acessibilidade */
+    border-radius: 50%; /* Forma circular */
 }
 
 .carousel-button:hover {
     color: #007a63;
+    background: rgba(0, 150, 136, 0.5); /* Cor de fundo transparente com hover */
 }
 
 @keyframes move {
@@ -115,3 +118,37 @@ nav a:hover {
         transform: translateX(0);
     }
 }
+
+/* Estilos para a seção de Reserva */
+.reservation {
+    background-color: #009688; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 100px 0; /* Espaçamento interno (topo/baixo) */
+}
+
+.reservation-heading {
+    font-size: 36px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.reservation-text {
+    font-size: 18px; /* Tamanho da fonte do texto */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.reservation-button {
+    background-color: #272626; /* Cor preta para o botão */
+    color: #fff; /* Cor do texto no botão */
+    border: none; /* Remova a borda do botão */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
+}
+
+.reservation-button:hover {
+    background-color: #333; /* Cor do botão ao passar o mouse */
+}
+
+.reservation-button:focus {
+    outline: none; /* Remova a borda de foco padrão */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
+}
+
