@@ -119,7 +119,6 @@ nav a:hover {
   }
 }
 
-/* Estilos para a seção de Reserva */
 /* Estilo para a seção Reservar */
 .reservation {
   background-color: #009688; /* Cor de fundo */
@@ -137,11 +136,33 @@ nav a:hover {
   margin-bottom: 30px; /* Espaçamento inferior */
 }
 
-.reservation-button {
+/* Estilos para o botão "Enviar Mensagem" */
+.btn-primary {
   background-color: #272626; /* Cor preta para o botão */
   color: #fff; /* Cor do texto no botão */
   border: none; /* Remova a borda do botão */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
+  margin-bottom: 30px; /* Espaçamento inferior para separar do rodapé */
+}
+
+.btn-primary:hover {
+  background-color: #333; /* Cor do botão ao passar o mouse */
+}
+
+.btn-primary:focus {
+  outline: none; /* Remova a borda de foco padrão */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
+}
+/* Estilos para os botões "Reservar Agora" e "Agendar Visita" */
+.reservation-button {
+  background-color: #272626; /* Cor de fundo preta */
+  color: #fff; /* Cor do texto no botão */
+  border: none; /* Remova a borda do botão */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
+  margin-bottom: 30px; /* Espaçamento inferior para separar do rodapé */
+  padding: 10px 20px; /* Espaçamento interno para melhorar a aparência */
+  border-radius: 50px; /* Forma circular com um raio maior */
+  font-size: 18px; /* Tamanho da fonte */
 }
 
 .reservation-button:hover {
@@ -188,4 +209,14 @@ nav a:hover {
 .testimonial .client-name {
   font-weight: bold; /* Deixar o nome do cliente em negrito */
   font-size: 18px; /* Tamanho da fonte do nome do cliente */
+}
+
+/* Adicione o estilo para a seção de Contato */
+.contact {
+  padding-top: 1cm; /* Adicione espaço superior de 2cm */
+}
+
+/* Adicione margem inferior ao botão no rodapé */
+.footer-button {
+  margin-bottom: 30px;
 }
