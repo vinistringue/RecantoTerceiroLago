@@ -1,234 +1,191 @@
 /* Estilos CSS aqui */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
 header {
-    background-color: #009688;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
 }
 
 header h1 {
-    font-size: 50px;
-    margin: 0;
+  font-size: 50px;
+  margin: 0;
 }
 
 nav {
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #009688;
+  color: #009688;
 }
 
 /* Estilos para a seção de Página Inicial */
 #home {
-    text-align: center;
-    padding: 15px;
+  text-align: center;
+  padding: 15px;
 }
 
 #home h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #home p {
-    font-size: 18px;
-    margin-top: 20px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 /* Estilos para o carrossel */
 .carousel {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    width: 100%; /* Usar a largura total do contêiner pai */
-    max-width: 800px; /* Largura máxima do carrossel */
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%; /* Usar a largura total do contêiner pai */
+  max-width: 800px; /* Largura máxima do carrossel */
+  margin: 0 auto;
+  position: relative;
 }
 
 .carousel-container {
-    display: flex;
-    animation: move 25s infinite linear;
+  display: flex;
+  animation: move 25s infinite linear;
 }
 
 .carousel-item {
-    width: 100%;
-    flex-shrink: 0;
-    max-width: 100%; /* Certificar-se de que as imagens não ultrapassem a largura do carrossel */
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 100%; /* Certificar-se de que as imagens não ultrapassem a largura do carrossel */
 }
 
 /* Botões de navegação */
 .carousel-navigation {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carousel-button {
-    background: rgba(255, 255, 255, 0.5); /* Cor de fundo transparente */
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #009688;
-    transition: color 0.3s ease, background 0.3s ease;
-    padding: 10px 15px; /* Espaçamento interno para melhorar a acessibilidade */
-    border-radius: 50%; /* Forma circular */
+  background: rgba(255, 255, 255, 0.5); /* Cor de fundo transparente */
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #009688;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 10px 15px; /* Espaçamento interno para melhorar a acessibilidade */
+  border-radius: 50%; /* Forma circular */
 }
 
 .carousel-button:hover {
-    color: #007a63;
-    background: rgba(0, 150, 136, 0.5); /* Cor de fundo transparente com hover */
+  color: #007a63;
+  background: rgba(0, 150, 136, 0.5); /* Cor de fundo transparente com hover */
 }
 
 @keyframes move {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Estilos para a seção de Reserva */
 /* Estilo para a seção Reservar */
 .reservation {
-    background-color: #009688; /* Cor de fundo */
-    padding: 10px; /* Espaçamento interno */
-    color: #fff; /* Cor do texto */
+  background-color: #009688; /* Cor de fundo */
+  padding: 10px; /* Espaçamento interno */
+  color: #fff; /* Cor do texto */
 }
 
-
 .reservation-heading {
-    font-size: 36px; /* Tamanho da fonte do título */
-    margin-bottom: 20px; /* Espaçamento inferior */
+  font-size: 36px; /* Tamanho da fonte do título */
+  margin-bottom: 20px; /* Espaçamento inferior */
 }
 
 .reservation-text {
-    font-size: 18px; /* Tamanho da fonte do texto */
-    margin-bottom: 30px; /* Espaçamento inferior */
+  font-size: 18px; /* Tamanho da fonte do texto */
+  margin-bottom: 30px; /* Espaçamento inferior */
 }
 
 .reservation-button {
-    background-color: #272626; /* Cor preta para o botão */
-    color: #fff; /* Cor do texto no botão */
-    border: none; /* Remova a borda do botão */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
+  background-color: #272626; /* Cor preta para o botão */
+  color: #fff; /* Cor do texto no botão */
+  border: none; /* Remova a borda do botão */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
 }
 
 .reservation-button:hover {
-    background-color: #333; /* Cor do botão ao passar o mouse */
+  background-color: #333; /* Cor do botão ao passar o mouse */
 }
 
 .reservation-button:focus {
-    outline: none; /* Remova a borda de foco padrão */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
+  outline: none; /* Remova a borda de foco padrão */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
 }
 
-/* Estilo adicional para a Seção de Imagens */
-.gallery-heading {
-    color: #333;
-    font-size: 32px;
-    margin-top: 1cm;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  .gallery-description {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .gallery-image {
-    position: relative;
-    margin: 0;
-    width: calc(33.33% - 20px);
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-image:hover {
-    transform: scale(1.05);
-  }
-  
-  .gallery-image img {
-    width: 60%; /* Reduzido o tamanho em 60% */
-    height: auto;
-    vertical-align: middle;
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .gallery-image:hover .image-overlay {
-    opacity: 1;
-  }
-  
-  .image-overlay a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .image-overlay a:hover {
-    color: #ff6600;
-  }
-  
-  /* Ícone de ampliar */
-  .fa-search-plus {
-    margin-right: 5px;
-  }
-  
+/* Estilos para a seção de Depoimentos */
+#testimonials {
+  background-color: #f9f9f9; /* Cor de fundo da seção */
+  padding: 60px 0; /* Espaçamento interno superior e inferior */
+}
+
+#testimonials h2 {
+  text-align: center; /* Centralizar o título */
+  margin-bottom: 30px; /* Espaçamento inferior do título */
+  font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.testimonial {
+  background-color: #fff; /* Cor de fundo do depoimento */
+  padding: 20px; /* Espaçamento interno do depoimento */
+  text-align: center; /* Centralizar o conteúdo do depoimento */
+  border-radius: 8px; /* Arredondar as bordas do depoimento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaçamento inferior entre os depoimentos */
+}
+
+.testimonial img {
+  max-width: 100px; /* Largura máxima da imagem do cliente */
+  border-radius: 50%; /* Arredondar a imagem do cliente (assumindo que as imagens são quadradas) */
+  margin: 0 auto 15px; /* Centralizar a imagem e adicionar espaçamento inferior */
+}
+
+.testimonial .testimonial-text {
+  font-size: 16px; /* Tamanho da fonte do texto do depoimento */
+  margin-bottom: 15px; /* Espaçamento inferior do texto do depoimento */
+}
+
+.testimonial .client-name {
+  font-weight: bold; /* Deixar o nome do cliente em negrito */
+  font-size: 18px; /* Tamanho da fonte do nome do cliente */
+}
