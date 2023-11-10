@@ -18,9 +18,9 @@
       <!-- Adicionei um link para redirecionar para index.html quando clicado -->
       <a href="#home">Página Inicial</a>
       <!-- Atualizei o link para apontar para o arquivo "reserva.html" -->
-      <a href="reserva.html">Reservar</a>
+      <a href="#reservation">Reservar</a>
       <a href="#testimonials">Depoimentos</a>
-      <a href="#contact">Contato</a>
+      <a href="#footer">Contato</a>
     </nav>
     <main>
       <!-- Seção: Página Inicial -->
@@ -141,7 +141,7 @@
                   </a>
                   <a
                     class="btn btn-secondary btn-lg reservation-button"
-                    href="#contact"
+                    href="#footer"
                   >
                     Agendar Visita
                   </a>
@@ -312,57 +312,17 @@
           </div>
         </div>
       </section>
-
-      <!-- Seção: Contato -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <h2>Entre em Contato</h2>
-          <p>
-            Estamos sempre à disposição para responder a todas as suas perguntas
-            e ajudá-lo a planejar sua estadia conosco. Sinta-se à vontade para
-            nos contatar através do formulário abaixo.
-          </p>
-          <!-- Formulário de Contato (exemplo básico) -->
-          <form>
-            <div class="form-group">
-              <label for="nome">Nome</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nome"
-                placeholder="Seu Nome"
-              />
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea
-                class="form-control"
-                id="mensagem"
-                rows="4"
-                placeholder="Sua Mensagem"
-              ></textarea>
-            </div>
-            <!-- Botão "Enviar Mensagem" com link para o WhatsApp -->
-            <a
-              href="https://api.whatsapp.com/send?phone=11949937080"
-              class="btn btn-primary"
-              >Enviar Mensagem</a
-            >
-          </form>
-        </div>
-      </section>
     </main>
     <!-- Rodapé -->
-    <footer class="bg-dark text-white py-4">
+    <footer id="footer" class="bg-dark text-white py-4">
       <div class="container text-center">
         <!-- Informações de contato e links de redes sociais -->
         <div class="contact">
-          <h3>Contato</h3>
+          <h1>Contatos</h1>
           <p>Telefone: (11) 94993-7080</p>
           <p>E-mail: vinicius.stringue.depaula@gmail.com</p>
         </div>
         <div class="social-media">
-          <h3>Redes Sociais</h3>
           <a href="#" class="whatsapp-icon"
             ><img src="images/whatsapp.png" alt="WhatsApp"
           /></a>
@@ -374,6 +334,7 @@
           /></a>
         </div>
       </div>
+      <hr />
       <p>&copy; 2023 Recanto Terceiro Lago. Todos os direitos reservados.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
