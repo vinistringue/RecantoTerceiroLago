@@ -1,4 +1,4 @@
-/* Estilos CSS aqui */
+/* Reset de estilos padrão */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -6,6 +6,7 @@ body {
   background-color: #f0f0f0;
 }
 
+/* Estilo do cabeçalho */
 header {
   background-color: #009688;
   color: #fff;
@@ -13,17 +14,20 @@ header {
   padding: 30px 0;
 }
 
+/* Título do cabeçalho */
 header h1 {
   font-size: 50px;
   margin: 0;
 }
 
+/* Estilo da barra de navegação */
 nav {
   background-color: #333;
   text-align: center;
   padding: 10px 0;
 }
 
+/* Links de navegação */
 nav a {
   text-decoration: none;
   color: #fff;
@@ -33,48 +37,53 @@ nav a {
   transition: color 0.3s ease;
 }
 
+/* Efeito hover nos links de navegação */
 nav a:hover {
   color: #009688;
 }
 
-/* Estilos para a seção de Página Inicial */
+/* Estilo para a seção Página Inicial */
 #home {
   text-align: center;
   padding: 15px;
 }
 
+/* Título da Página Inicial */
 #home h2 {
   font-size: 40px;
 }
 
+/* Texto da Página Inicial */
 #home p {
   font-size: 18px;
   margin-top: 20px;
 }
 
-/* Estilos para o carrossel */
+/* Estilo do carrossel */
 .carousel {
   display: flex;
   overflow: hidden;
   justify-content: center;
-  width: 100%; /* Usar a largura total do contêiner pai */
-  max-width: 800px; /* Largura máxima do carrossel */
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
 
+/* Container do carrossel */
 .carousel-container {
   display: flex;
   animation: move 25s infinite linear;
 }
 
+/* Itens do carrossel */
 .carousel-item {
   width: 100%;
   flex-shrink: 0;
-  max-width: 100%; /* Certificar-se de que as imagens não ultrapassem a largura do carrossel */
+  max-width: 100%;
 }
 
-/* Botões de navegação */
+/* Navegação do carrossel */
 .carousel-navigation {
   position: absolute;
   top: 50%;
@@ -85,22 +94,25 @@ nav a:hover {
   align-items: center;
 }
 
+/* Botões de navegação do carrossel */
 .carousel-button {
-  background: rgba(255, 255, 255, 0.5); /* Cor de fundo transparente */
+  background: rgba(255, 255, 255, 0.5);
   border: none;
   cursor: pointer;
   font-size: 24px;
   color: #009688;
   transition: color 0.3s ease, background 0.3s ease;
-  padding: 10px 15px; /* Espaçamento interno para melhorar a acessibilidade */
-  border-radius: 50%; /* Forma circular */
+  padding: 10px 15px;
+  border-radius: 50%;
 }
 
+/* Efeito hover nos botões de navegação do carrossel */
 .carousel-button:hover {
   color: #007a63;
-  background: rgba(0, 150, 136, 0.5); /* Cor de fundo transparente com hover */
+  background: rgba(0, 150, 136, 0.5);
 }
 
+/* Animação do carrossel */
 @keyframes move {
   0% {
     transform: translateX(0);
@@ -121,102 +133,106 @@ nav a:hover {
 
 /* Estilo para a seção Reservar */
 .reservation {
-  background-color: #009688; /* Cor de fundo */
-  padding: 10px; /* Espaçamento interno */
-  color: #fff; /* Cor do texto */
+  background-color: #009688;
+  padding: 10px;
+  color: #fff;
 }
 
+/* Título da seção Reservar */
 .reservation-heading {
-  font-size: 36px; /* Tamanho da fonte do título */
-  margin-bottom: 20px; /* Espaçamento inferior */
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
+/* Texto da seção Reservar */
 .reservation-text {
-  font-size: 18px; /* Tamanho da fonte do texto */
-  margin-bottom: 30px; /* Espaçamento inferior */
-}
-
-/* Estilos para o botão "Enviar Mensagem" */
-.btn-primary {
-  background-color: #272626; /* Cor preta para o botão */
-  color: #fff; /* Cor do texto no botão */
-  border: none; /* Remova a borda do botão */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
-  margin-bottom: 30px; /* Espaçamento inferior para separar do rodapé */
-}
-
-.btn-primary:hover {
-  background-color: #333; /* Cor do botão ao passar o mouse */
-}
-
-.btn-primary:focus {
-  outline: none; /* Remova a borda de foco padrão */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
-}
-/* Estilos para os botões "Reservar Agora" e "Agendar Visita" */
-.reservation-button {
-  background-color: #272626; /* Cor de fundo preta */
-  color: #fff; /* Cor do texto no botão */
-  border: none; /* Remova a borda do botão */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave para cor de fundo e sombra */
-  margin-bottom: 30px; /* Espaçamento inferior para separar do rodapé */
-  padding: 10px 20px; /* Espaçamento interno para melhorar a aparência */
-  border-radius: 50px; /* Forma circular com um raio maior */
-  font-size: 18px; /* Tamanho da fonte */
-}
-
-.reservation-button:hover {
-  background-color: #333; /* Cor do botão ao passar o mouse */
-}
-
-.reservation-button:focus {
-  outline: none; /* Remova a borda de foco padrão */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicione uma sombra leve ao clicar no botão */
-}
-
-/* Estilos para a seção de Depoimentos */
-#testimonials {
-  background-color: #f9f9f9; /* Cor de fundo da seção */
-  padding: 60px 0; /* Espaçamento interno superior e inferior */
-}
-
-#testimonials h2 {
-  text-align: center; /* Centralizar o título */
-  margin-bottom: 30px; /* Espaçamento inferior do título */
-  font-size: 24px; /* Tamanho da fonte do título */
-}
-
-.testimonial {
-  background-color: #fff; /* Cor de fundo do depoimento */
-  padding: 20px; /* Espaçamento interno do depoimento */
-  text-align: center; /* Centralizar o conteúdo do depoimento */
-  border-radius: 8px; /* Arredondar as bordas do depoimento */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 20px; /* Espaçamento inferior entre os depoimentos */
-}
-
-.testimonial img {
-  max-width: 100px; /* Largura máxima da imagem do cliente */
-  border-radius: 50%; /* Arredondar a imagem do cliente (assumindo que as imagens são quadradas) */
-  margin: 0 auto 15px; /* Centralizar a imagem e adicionar espaçamento inferior */
-}
-
-.testimonial .testimonial-text {
-  font-size: 16px; /* Tamanho da fonte do texto do depoimento */
-  margin-bottom: 15px; /* Espaçamento inferior do texto do depoimento */
-}
-
-.testimonial .client-name {
-  font-weight: bold; /* Deixar o nome do cliente em negrito */
-  font-size: 18px; /* Tamanho da fonte do nome do cliente */
-}
-
-/* Adicione o estilo para a seção de Contato */
-.contact {
-  padding-top: 1cm; /* Adicione espaço superior de 2cm */
-}
-
-/* Adicione margem inferior ao botão no rodapé */
-.footer-button {
+  font-size: 18px;
   margin-bottom: 30px;
+}
+
+/* Botões "Reservar Agora" e "Agendar Visita" */
+.reservation-button {
+  background-color: #272626;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+/* Efeito hover nos botões de reserva */
+.reservation-button:hover {
+  background-color: #333;
+}
+
+/* Efeito de foco nos botões de reserva */
+.reservation-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para a seção de Depoimentos */
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+/* Título da seção de Depoimentos */
+#testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Estilo do depoimento */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Imagem do cliente no depoimento */
+.testimonial img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+/* Texto do depoimento */
+.testimonial .testimonial-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Nome do cliente no depoimento */
+.testimonial .client-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Estilo para a seção de Contato */
+.contact {
+  padding-top: 0.5cm;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Informações de contato e links de redes sociais no rodapé */
+.contact {
+  margin-bottom: 30px;
+}
+
+/* Espaçamento entre as imagens de redes sociais no rodapé */
+.social-media img {
+  margin-right: 20.8px;
 }

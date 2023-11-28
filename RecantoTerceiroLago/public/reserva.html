@@ -1,98 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
     <title>Recanto Terceiro Lago - Reserva</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Recanto Terceiro Lago</h1>
+      <h1>Recanto Terceiro Lago</h1>
     </header>
     <nav>
-        <!-- Adicionei um link para redirecionar para index.html quando clicado -->
-        <a href="index.html">Página Inicial</a>
-        <a href="#reservation">Reservar</a>
-        <a href="#testimonials">Depoimentos</a>
-        <a href="#contact">Contato</a>
+      <!-- Adicionei um link para redirecionar para index.html quando clicado -->
+      <a href="index.html">Página Inicial</a>
+      <a href="#reservation">Reservar</a>
+      <a href="#footer">Contato</a>
     </nav>
     <main>
-        <!-- Seção: Reservar -->
-        <section class="reservation" id="reservation">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="reservation-content">
-                            <h2 class="reservation-heading">Reserve Sua Estadia</h2>
-                            <p class="reservation-text">
-                                Explore a serenidade do nosso paraíso à beira da Represa
-                                Guarapiranga. Não perca a oportunidade de criar memórias
-                                inesquecíveis. Reserve agora!
-                            </p>
-                            <a
-                                class="btn btn-primary btn-lg reservation-button"
-                                href="#contact"
-                            >Reservar Agora</a>
-                        </div>
+      <!-- Seção: Reservar -->
+      <section class="reservation" id="reservation">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="reservation-content">
+                <!-- Formulário para realizar a reserva -->
+                <form id="reservationForm">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="firstName">Nome:</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        class="form-control"
+                        placeholder="Nome"
+                        required
+                      />
                     </div>
-                    <div class="col-lg-5">
-                        <div class="reservation-image-container">
-                            <!-- Carrossel de fotos na seção "Reservar" -->
-                            <div
-                                id="reservationCarousel"
-                                class="carousel slide"
-                                data-ride="carousel"
-                            >
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img
-                                            class="d-block w-100"
-                                            src="images/imagem.jpg"
-                                            alt="Chácara Imagem 1"
-                                        />
-                                    </div>
-                                    <!-- Adicione as imagens restantes aqui -->
-                                </div>
-                                <!-- Botões de navegação do carrossel -->
-                                <a
-                                    class="carousel-control-prev"
-                                    href="#reservationCarousel"
-                                    role="button"
-                                    data-slide="prev"
-                                >
-                                    <span
-                                        class="carousel-control-prev-icon"
-                                        aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Anterior</span>
-                                </a>
-                                <a
-                                    class="carousel-control-next"
-                                    href="#reservationCarousel"
-                                    role="button"
-                                    data-slide="next"
-                                >
-                                    <span
-                                        class="carousel-control-next-icon"
-                                        aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Próximo</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="form-group col-md-6">
+                      <label for="lastName">Sobrenome:</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="form-control"
+                        placeholder="Sobrenome"
+                        required
+                      />
                     </div>
-                </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="rg">RG:</label>
+                    <input
+                      type="text"
+                      id="rg"
+                      class="form-control"
+                      placeholder="RG"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input
+                      type="text"
+                      id="cpf"
+                      class="form-control"
+                      placeholder="CPF"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="reservationStartDate">Data de Entrada:</label>
+                    <input
+                      type="date"
+                      id="reservationStartDate"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="reservationEndDate">Data de Saída:</label>
+                    <input
+                      type="date"
+                      id="reservationEndDate"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    onclick="realizarReserva()"
+                    class="reservation-button"
+                  >
+                    Realizar Reserva
+                  </button>
+                </form>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-5">
+              <div class="reservation-image-container">
+                <!-- Carrossel de fotos na seção "Reservar" -->
+                <div
+                  id="reservationCarousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src="images/imagem.jpg"
+                        alt="Chácara Imagem 1"
+                      />
+                    </div>
+                    <!-- Adicione as imagens restantes aqui -->
+                  </div>
+                  <!-- Botões de navegação do carrossel -->
+                  <a
+                    class="carousel-control-prev"
+                    href="#reservationCarousel"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#reservationCarousel"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Recanto Terceiro Lago. Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <footer id="footer" class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <!-- Informações de contato e links de redes sociais -->
+        <div class="contact">
+          <h1>Contatos</h1>
+          <p>Telefone: (11) 94993-7080</p>
+          <p>E-mail: vinicius.stringue.depaula@gmail.com</p>
+        </div>
+        <div class="social-media">
+          <a href="#" class="whatsapp-icon"
+            ><img src="images/whatsapp.png" alt="WhatsApp"
+          /></a>
+          <a href="#" class="email-icon"
+            ><img src="images/email.png" alt="Email"
+          /></a>
+          <a href="#" class="github-icon"
+            ><img src="images/github.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <p>&copy; 2023 Recanto Terceiro Lago. Todos os direitos reservados.</p>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
