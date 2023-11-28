@@ -234,5 +234,9 @@ footer {
 
 /* Espaçamento entre as imagens de redes sociais no rodapé */
 .social-media img {
+<<<<<<< HEAD
   margin-right: 20.8px;
+=======
+  margin-right: 25.8px;
+>>>>>>> 58830635f98a449eaacaf51effd157ed432d7ccc
 }
